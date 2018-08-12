@@ -43,6 +43,7 @@
 		A6B1B8D521201CDE0010D813 /* CIDITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CIDITests.swift; sourceTree = "<group>"; };
 		A6B1B8D721201CDE0010D813 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A6B1B8DE212022340010D813 /* config.yml */ = {isa = PBXFileReference; explicitFileType = text.xml; path = config.yml; sourceTree = "<group>"; };
+		A6B1B8DF2120289B0010D813 /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +67,7 @@
 		A6B1B8A8212006F20010D813 = {
 			isa = PBXGroup;
 			children = (
+				A6B1B8DF2120289B0010D813 /* .travis.yml */,
 				A6B1B8DD212022340010D813 /* .circleci */,
 				A6B1B8CD21200E310010D813 /* README.md */,
 				A6B1B8C7212007F80010D813 /* .gitignore */,
