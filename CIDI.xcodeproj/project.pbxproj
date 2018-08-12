@@ -13,7 +13,18 @@
 		A6B1B8BC212006F20010D813 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6B1B8BB212006F20010D813 /* Assets.xcassets */; };
 		A6B1B8BF212006F20010D813 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6B1B8BD212006F20010D813 /* LaunchScreen.storyboard */; };
 		A6B1B8CE21200E310010D813 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A6B1B8CD21200E310010D813 /* README.md */; };
+		A6B1B8D621201CDE0010D813 /* CIDITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B1B8D521201CDE0010D813 /* CIDITests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A6B1B8D821201CDE0010D813 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A6B1B8A9212006F20010D813 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A6B1B8B0212006F20010D813;
+			remoteInfo = CIDI;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		A6B1B8B1212006F20010D813 /* CIDI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CIDI.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -28,10 +39,21 @@
 		A6B1B8C921200ACB0010D813 /* Appfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; fileEncoding = 4; path = Appfile; sourceTree = "<group>"; };
 		A6B1B8CA21200ACB0010D813 /* Fastfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; fileEncoding = 4; path = Fastfile; sourceTree = "<group>"; };
 		A6B1B8CD21200E310010D813 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		A6B1B8D321201CDD0010D813 /* CIDITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CIDITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6B1B8D521201CDE0010D813 /* CIDITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CIDITests.swift; sourceTree = "<group>"; };
+		A6B1B8D721201CDE0010D813 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6B1B8DE212022340010D813 /* config.yml */ = {isa = PBXFileReference; explicitFileType = text.xml; path = config.yml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		A6B1B8AE212006F20010D813 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6B1B8D021201CDD0010D813 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -44,11 +66,13 @@
 		A6B1B8A8212006F20010D813 = {
 			isa = PBXGroup;
 			children = (
+				A6B1B8DD212022340010D813 /* .circleci */,
 				A6B1B8CD21200E310010D813 /* README.md */,
 				A6B1B8C7212007F80010D813 /* .gitignore */,
 				A6B1B8C6212007490010D813 /* Gemfile */,
 				A6B1B8C821200ACB0010D813 /* fastlane */,
 				A6B1B8B3212006F20010D813 /* CIDI */,
+				A6B1B8D421201CDE0010D813 /* CIDITests */,
 				A6B1B8B2212006F20010D813 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -57,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				A6B1B8B1212006F20010D813 /* CIDI.app */,
+				A6B1B8D321201CDD0010D813 /* CIDITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -83,6 +108,23 @@
 			path = fastlane;
 			sourceTree = "<group>";
 		};
+		A6B1B8D421201CDE0010D813 /* CIDITests */ = {
+			isa = PBXGroup;
+			children = (
+				A6B1B8D521201CDE0010D813 /* CIDITests.swift */,
+				A6B1B8D721201CDE0010D813 /* Info.plist */,
+			);
+			path = CIDITests;
+			sourceTree = "<group>";
+		};
+		A6B1B8DD212022340010D813 /* .circleci */ = {
+			isa = PBXGroup;
+			children = (
+				A6B1B8DE212022340010D813 /* config.yml */,
+			);
+			path = .circleci;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,6 +145,24 @@
 			productReference = A6B1B8B1212006F20010D813 /* CIDI.app */;
 			productType = "com.apple.product-type.application";
 		};
+		A6B1B8D221201CDD0010D813 /* CIDITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6B1B8DA21201CDE0010D813 /* Build configuration list for PBXNativeTarget "CIDITests" */;
+			buildPhases = (
+				A6B1B8CF21201CDD0010D813 /* Sources */,
+				A6B1B8D021201CDD0010D813 /* Frameworks */,
+				A6B1B8D121201CDD0010D813 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A6B1B8D921201CDE0010D813 /* PBXTargetDependency */,
+			);
+			name = CIDITests;
+			productName = CIDITests;
+			productReference = A6B1B8D321201CDD0010D813 /* CIDITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -116,6 +176,11 @@
 					A6B1B8B0212006F20010D813 = {
 						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Automatic;
+					};
+					A6B1B8D221201CDD0010D813 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A6B1B8B0212006F20010D813;
 					};
 				};
 			};
@@ -133,6 +198,7 @@
 			projectRoot = "";
 			targets = (
 				A6B1B8B0212006F20010D813 /* CIDI */,
+				A6B1B8D221201CDD0010D813 /* CIDITests */,
 			);
 		};
 /* End PBXProject section */
@@ -149,6 +215,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A6B1B8D121201CDD0010D813 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -161,7 +234,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A6B1B8CF21201CDD0010D813 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6B1B8D621201CDE0010D813 /* CIDITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A6B1B8D921201CDE0010D813 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A6B1B8B0212006F20010D813 /* CIDI */;
+			targetProxy = A6B1B8D821201CDE0010D813 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		A6B1B8B8212006F20010D813 /* Main.storyboard */ = {
@@ -320,6 +409,38 @@
 			};
 			name = Release;
 		};
+		A6B1B8DB21201CDE0010D813 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 86BD45EKTC;
+				INFOPLIST_FILE = CIDITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.disney.CIDITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CIDI.app/CIDI";
+			};
+			name = Debug;
+		};
+		A6B1B8DC21201CDE0010D813 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 86BD45EKTC;
+				INFOPLIST_FILE = CIDITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.disney.CIDITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CIDI.app/CIDI";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -337,6 +458,15 @@
 			buildConfigurations = (
 				A6B1B8C4212006F30010D813 /* Debug */,
 				A6B1B8C5212006F30010D813 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6B1B8DA21201CDE0010D813 /* Build configuration list for PBXNativeTarget "CIDITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6B1B8DB21201CDE0010D813 /* Debug */,
+				A6B1B8DC21201CDE0010D813 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
